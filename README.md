@@ -5,11 +5,21 @@ Ansible Role Fluentbit
 
 This role installs and configure [fluentbit](https://fluentbit.io/) log collector.
 
+Fork from `eagleusb.fluentbit`
+
 Installation
 ------------
 
+```yaml
+# requirements.yml
+- src: https://github.com/f9n/ansible-fluentbit.git
+  scm: git
+  version: 3.0.0
+  name: f9n.ansible-fluentbit
+```
+
 ```sh
-ansible-galaxy install eagleusb.fluentbit
+$ ansible-galaxy install -r requirements.yml
 ```
 
 Requirements
