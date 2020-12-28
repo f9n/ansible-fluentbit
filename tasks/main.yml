@@ -14,9 +14,11 @@
   tags:
     - "fluentbit::package"
     - "fluentbit::install"
+  when: fluentbit_install_enabled | bool
 
 - name: "fluentbit | configure fluentbit"
   include_tasks: "configure.yml"
   tags:
     - "fluentbit::configure"
     - "fluentbit::install"
+  when: fluentbit_configure_enabled | bool

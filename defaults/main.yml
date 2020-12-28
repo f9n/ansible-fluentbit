@@ -1,4 +1,7 @@
 ---
+fluentbit_install_enabled: true
+fluentbit_configure_enabled: false
+
 # type: dict
 # descr: package repository details
 fluentbit_repository:

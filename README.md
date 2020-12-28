@@ -22,6 +22,9 @@ Role Variables
 
 | Variables                               | Required | Default value | Description                                            |
 |-----------------------------------------|----------|---------------|--------------------------------------------------------|
+| fluentbit_install_enabled         | no       | *true*         | install fluentbit |
+| fluentbit_configure_enabled         | no       | *false*         | configure fluentbit configuration |
+| fluentbit_service_flush_seconds         | no       | *5.0*         | flush input data to output every seconds.nanoseconds   |
 | fluentbit_service_flush_seconds         | no       | *5.0*         | flush input data to output every seconds.nanoseconds   |
 | fluentbit_service_log_file              | no       | ""            | output td-agent daemon logs to this file               |
 | fluentbit_service_enable_metrics        | no       | *false*       | enable metrics http endpoint                           |
